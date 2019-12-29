@@ -6,8 +6,9 @@ services:
         build: burp/
         ports:
             - "8080:8080"
+            - "8090:8090"
         volumes:
             - /tmp/.X11-unix:/tmp/.X11-unix
             - ./_data/:/home/tester/
         env_file: ./burp.env
-        command: sh /home/tester/run.sh
+        command: sh /home/tester/run.sh 

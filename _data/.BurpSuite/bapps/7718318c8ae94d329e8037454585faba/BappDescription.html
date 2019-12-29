@@ -1,0 +1,10 @@
+<p>This extension allows encryption and decryption of AES payloads in Burp Intruder and Scanner. 
+The extension registers the following items:</p>
+<ul>
+	<li>Two Intruder payload processors, for encrypting and decrypting payloads 
+	in Intruder attacks.</li>
+	<li>A Scanner insertion point provider. When a request is sent for active 
+	scanning, the extension looks in the request's parameters for AES-encrypted 
+	payloads that can be decrypted using the current configuration / keys. If it 
+	finds any, it creates insertion points to enable scanning inside the AES-encrypted payloads.</li>
+</ul>

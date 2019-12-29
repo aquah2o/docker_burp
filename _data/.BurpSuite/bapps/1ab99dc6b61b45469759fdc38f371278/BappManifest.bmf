@@ -1,0 +1,12 @@
+Uuid: 1ab99dc6b61b45469759fdc38f371278
+ExtensionType: 2
+Name: Session Tracking Checks
+RepoName: session-tracking-checks
+ScreenVersion: 1.0
+SerialVersion: 0
+MinPlatformVersion: 0
+ProOnly: True
+Author: Brett Gervasoni, NCC Group
+ShortDescription: Checks for the presence of known session tracking sites
+EntryPoint: session-tracking-checks.py
+BuildCommand: 

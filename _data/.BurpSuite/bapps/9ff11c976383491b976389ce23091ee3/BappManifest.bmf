@@ -1,0 +1,10 @@
+Uuid: 9ff11c976383491b976389ce23091ee3
+ExtensionType: 2
+Name: SAML Encoder / Decoder
+ScreenVersion: 1.1
+SerialVersion: 2
+MinPlatformVersion: 0
+ProOnly: False
+Author:  Ben Campbell
+ShortDescription: Adds a tab to Burp's main UI for decoding/encoding SAML messages.
+EntryPoint: burp_saml.py

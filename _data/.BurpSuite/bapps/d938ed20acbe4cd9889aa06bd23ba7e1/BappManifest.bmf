@@ -1,0 +1,13 @@
+Uuid: d938ed20acbe4cd9889aa06bd23ba7e1
+ExtensionType: 1
+Name: Target Redirector
+RepoName: target-redirector
+ScreenVersion: 1.1
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: False
+Author: Paul Taylor, Foregenix Ltd
+ShortDescription: Redirect requests to a new target, to cope with moved apps.
+EntryPoint: target-redirector.jar
+BuildCommand: ./build
+

@@ -1,0 +1,11 @@
+Uuid: ec94f32a5b1f467bbb1459398818156f
+ExtensionType: 1
+Name: SAMLReQuest
+ScreenVersion: 2.1
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: False
+Author: Ahmad Abolhadid
+ShortDescription: Enables you to view, decode, and modify SAML requests and responses.
+EntryPoint: build/libs/saml-re-quest-all.jar
+BuildCommand: gradle fatJar

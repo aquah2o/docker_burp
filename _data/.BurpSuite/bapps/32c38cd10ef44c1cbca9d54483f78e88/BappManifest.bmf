@@ -1,0 +1,10 @@
+Uuid: 32c38cd10ef44c1cbca9d54483f78e88
+ExtensionType: 2
+Name: SAML Editor
+ScreenVersion: 1.1
+SerialVersion: 2
+MinPlatformVersion: 0
+ProOnly: False
+Author:  Chris Smith
+ShortDescription: Adds a tab to Burp's message editor for decoding/encoding SAML messages.
+EntryPoint: burp_saml.py

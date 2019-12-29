@@ -11,6 +11,7 @@ RUN sed 's/main$/main universe/' -i /etc/apt/sources.list && \
 # Create tester user
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/tester && \
+    chmod 777 /home/tester && \
     echo "tester:x:${uid}:${gid}:tester,,,:/home/tester:/bin/bash" >> /etc/passwd && \
     echo "tester:x:${uid}:" >> /etc/group && \
     chown ${uid}:${gid} -R /home/tester
