@@ -7,6 +7,7 @@ services:
         ports:
             - "8080:8080"
             - "8090:8090"
+            - "1337:1337"
         volumes:
             - /tmp/.X11-unix:/tmp/.X11-unix
             - ./_data/:/home/tester/
