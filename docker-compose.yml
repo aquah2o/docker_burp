@@ -1,15 +1,17 @@
 version: '2'
 
 services:
-    burp:
-        container_name: burp
-        build: burp/
-        ports:
-            - "8080:8080"
-            - "8090:8090"
-            - "1337:1337"
-        volumes:
-            - /tmp/.X11-unix:/tmp/.X11-unix
-            - ./_data/:/home/tester/
-        env_file: ./burp.env
-        command: sh /home/tester/run.sh 
+   gcp-builder-project:
+    image: gcr.io/gcp-builder-project/dock4burp
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      -  /tmp/.X11-unix:/tmp/.X11-unix
+      - ./_data/:/home/tester/
+    tty: true
+    ports:
+      - "127.0.0.1:8080:8080" # Burp
+      - "127.0.0.1:8090:8090" # API
+      - "127.0.0.1:1337:1337" # 1337
+    env_file: ./burp.env
+    command: sh /home/tester/run.sh
