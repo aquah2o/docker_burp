@@ -17,6 +17,6 @@ RUN export uid=1000 gid=1000 && \
     chown ${uid}:${gid} -R /home/tester
 
 # Setup working directory
-USER tester
+USER root
 ENV HOME /home/tester
 WORKDIR /home/tester
