@@ -16,7 +16,10 @@ RUN export uid=1000 gid=1000 && \
     echo "tester:x:${uid}:" >> /etc/group && \
     chown ${uid}:${gid} -R /home/tester
 
+RUN adduser tester sudo
+
+
 # Setup working directory
-USER root
+USER tester
 ENV HOME /home/tester
 WORKDIR /home/tester
