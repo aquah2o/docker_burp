@@ -20,13 +20,11 @@ RUN export uid=1000 gid=1000 && \
 
 RUN adduser tester sudo
 RUN useradd admin && echo "admin:admin" | chpasswd && adduser admin sudo
-RUN rm -rf /home/tester/.java/.userPrefs
+
 RUN mkdir -p /home/tester/.java
 RUN mkdir -p /home/tester/.java/.userPrefs
 RUN chmod 777 /home/tester/.java
 RUN chmod 777 /home/tester/.java/.userPrefs
-RUN sudo su -
-RUN /home/tester/run2.sh
 # Setup working directory
 USER tester
 ENV HOME /home/tester
