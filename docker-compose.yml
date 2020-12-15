@@ -16,6 +16,6 @@ services:
       - "127.0.0.1:1337:1337" # 1337
      env_file: ./burp.env
     
-     ENTRYPOINT ["/home/tester/run2.sh"] 
+     ENTRYPOINT: ["/home/tester/run2.sh"] 
      
      
