@@ -18,15 +18,11 @@ RUN export uid=1000 gid=1000 && \
     echo "tester:x:${uid}:" >> /etc/group && \
     chown ${uid}:${gid} -R /home/tester
 
-RUN adduser tester sudo
-RUN useradd admin && echo "admin:admin" | chpasswd && adduser admin sudo
+# RUN adduser tester sudo
+# RUN useradd admin && echo "admin:admin" | chpasswd && adduser admin sudo
 
-RUN mkdir -p /home/tester/.java
-RUN mkdir -p /home/tester/.java/.userPrefs
-RUN chmod 777 /home/tester/.java
-RUN chmod 777 /home/tester/.java/.userPrefs
 # Setup working directory
-USER tester
+USER root
 ENV HOME /home/tester
 WORKDIR /home/tester
 
