@@ -8,6 +8,8 @@ RUN sed 's/main$/main universe/' -i /etc/apt/sources.list && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
 
+RUN apt-get update && apt-get install -y vim nano zsh curl git sudo
+
 # Create tester user
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/tester && \
@@ -17,7 +19,7 @@ RUN export uid=1000 gid=1000 && \
     chown ${uid}:${gid} -R /home/tester
 
 RUN adduser tester sudo
-
+RUN useradd admin && echo "admin:admin" | chpasswd && adduser admin sudo
 
 # Setup working directory
 USER tester
