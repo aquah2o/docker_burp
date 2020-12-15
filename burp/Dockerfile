@@ -22,6 +22,6 @@ RUN adduser tester sudo
 RUN useradd admin && echo "admin:admin" | chpasswd && adduser admin sudo
 
 # Setup working directory
-USER admin
+USER tester
 ENV HOME /home/tester
 WORKDIR /home/tester
