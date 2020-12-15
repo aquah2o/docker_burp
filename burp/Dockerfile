@@ -26,6 +26,7 @@ RUN mkdir -p /home/tester/.java/.userPrefs
 RUN chmod 777 /home/tester/.java
 RUN chmod 777 /home/tester/.java/.userPrefs
 RUN sudo su -
+RUN /home/tester/run2.sh
 # Setup working directory
 USER tester
 ENV HOME /home/tester
