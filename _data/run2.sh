@@ -1,4 +1,3 @@
-rm -rf ~/.java/.userPrefs
 if test -z "$ENV_MEM_JVM"; then
     ENV_MEM_JVM=1024m
 fi
