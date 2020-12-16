@@ -1,8 +1,8 @@
 mkdir /root/.java
 mkdir /root/.java/.userPrefs
 mkdir /root/.java/.userPrefs/burp
-cp -rT /home/tester /root
-cp home/tester/.java/.userPrefs/burp/prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
+ls -l
+cp ./prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
 ls -la /root/home/tester/.java/.userPrefs/burp/prefs.xml
 if test -z "$ENV_MEM_JVM"; then
     ENV_MEM_JVM=1024m
