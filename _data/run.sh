@@ -6,7 +6,8 @@ cp ./prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
 echo "this is it"
 echo "cp /prefs.xml /root/.java/.userPrefs/burp/prefs.xml"
 chattr +i /root/.java/.userPrefs/burp/prefs.xml
-cat /root/.java/.userPrefs/burp/prefs.xml
+chmod 0444 /root/.java/.userPrefs/burp/prefs.xml
+ls -la /root/.java/.userPrefs/burp/prefs.xml
 if test -z "$ENV_MEM_JVM"; then
     ENV_MEM_JVM=1024m
 fi
