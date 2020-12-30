@@ -6,7 +6,8 @@ mkdir /root/.java/.userPrefs/burp
 cp ./prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
 cp ./prefs.xml  /home/.java/.userPrefs/burp/prefs.xml
 cp ./prefs.xml  /home/tester/.java/.userPrefs/burp/prefs.xml
-ls -la /root/home/tester/.java/.userPrefs/burp/prefs.xml
+ls -la /root/.java/.userPrefs/burp/prefs.xml
+cp /home/tester/prefs.xml /root/.java/.userPrefs/burp/prefs.xml
 if test -z "$ENV_MEM_JVM"; then
     ENV_MEM_JVM=1024m
 fi
