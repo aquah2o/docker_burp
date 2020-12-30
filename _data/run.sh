@@ -4,7 +4,8 @@ mkdir /root/.java/.userPrefs
 mkdir /root/.java/.userPrefs/burp
 cp ./prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
 echo "this is it"
-echo "cp /home/tester/prefs.xml /root/.java/.userPrefs/burp/prefs.xml"
+echo "cp /prefs.xml /root/.java/.userPrefs/burp/prefs.xml"
+chattr +i /root/.java/.userPrefs/burp/prefs.xml
 cat /root/.java/.userPrefs/burp/prefs.xml
 if test -z "$ENV_MEM_JVM"; then
     ENV_MEM_JVM=1024m
