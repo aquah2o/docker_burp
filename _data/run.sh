@@ -1,4 +1,5 @@
 ls -la /root/home/tester/.java/.userPrefs/burp/prefs.xml
+ls -la /root/.java/.userPrefs/burp/prefs.xml
 echo "this is now"
 mkdir /root/.java
 mkdir /root/.java/.userPrefs
