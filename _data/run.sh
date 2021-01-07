@@ -1,4 +1,4 @@
-echo "CP ./PREFS"
+echo "where is ./PREFS"
 sudo find  / -name  prefs.xml -printf "%T+\t%p\n" | sort
 ls -la /root/.java/.userPrefs/burp/prefs.xml
 if test -z "$ENV_MEM_JVM"; then
