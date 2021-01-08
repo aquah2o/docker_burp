@@ -9,7 +9,7 @@ services:
      volumes:
       -  /tmp/.X11-unix:/tmp/.X11-unix
       - ./_data/:/home/tester/
-      - /home/jenkins/.java/.userPrefs/burp/:/root/.java/.userPrefs/burp/
+      -  /home/jenkins/:/root/
      tty: true
      ports:
       - "127.0.0.1:8008:8008" # Burp
