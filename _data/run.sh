@@ -3,8 +3,8 @@ mkdir /root/.java
 mkdir /root/.java/.userPrefs
 mkdir /root/.java/.userPrefs/burp
 echo "where is ./PREFS"
-sudo find  / -name  prefs.xml -printf "%T+\t%p\n" | sort
-ls -la /root/.java/.userPrefs/burp/prefs.xml
+sudo find  / -name  prefs.xml -printf "%T+\t%p\n" | sort > whereami.txt
+ls -la /root/.java/.userPrefs/burp/prefs.xml > prefsfileloc.txt
 if test -z "$ENV_MEM_JVM"; then
     ENV_MEM_JVM=1024m
 fi
