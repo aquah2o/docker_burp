@@ -5,7 +5,7 @@ services:
      container_name: burp
      build: burp
      environment:
-      - DISPLAY=:10.0
+      - DISPLAY=:0
      volumes:
       -  /tmp/.X11-unix:/tmp/.X11-unix
       - ./_data/:/home/tester/
