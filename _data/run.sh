@@ -5,7 +5,8 @@ mkdir /root/.java/.userPrefs/burp
 cp /root/prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
 echo "where is ./PREFS"
 sudo find  / -name  prefs.xml -printf "%T+\t%p\n" | sort 
-ls -la /root/.java/.userPrefs/burp/prefs.xml 
+ls -la /root/.java/.userPrefs/burp/prefs.xml
+chmod 777 burp-rest-api.sh
 if test -z "$ENV_MEM_JVM"; then
     ENV_MEM_JVM=1024m
 fi
