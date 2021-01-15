@@ -8,6 +8,7 @@ services:
       - DISPLAY=:10.0
      volumes:
       -  /tmp/.X11-unix:/tmp/.X11-unix
+      -  /home/dan/.java/.userPrefs/burp :/home/tester/.java/.userPrefs/burp
       - ./_data/:/home/tester/
       -  /home/jenkins/:/root/
      tty: true
