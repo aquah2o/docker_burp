@@ -29,7 +29,7 @@ RUN export uid=1000 gid=1000 && \
     echo "tester:x:${uid}:" >> /etc/group && \
     chown ${uid}:${gid} -R /home/tester
 
-# RUN adduser tester sudo
+RUN usermod -aG sudo tester 
 # RUN useradd admin && echo "admin:admin" | chpasswd && adduser admin sudo
 
 # Setup working directory
