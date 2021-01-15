@@ -30,7 +30,7 @@ RUN export uid=1000 gid=1000 && \
     chown ${uid}:${gid} -R /home/tester && usermod -aG sudo tester
 
 RUN usermod -aG sudo tester 
-RUN useradd admin && echo "admin:admin" | chpasswd && usermod -aG admin sudo
+RUN useradd admin && echo "admin:admin" | chpasswd && usermod -aG sudo admin
 
 # Setup working directory
 USER tester
