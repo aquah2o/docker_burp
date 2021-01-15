@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y vim nano zsh curl git sudo
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/tester && \
     chmod 777 /home/tester && \
-    echo "tester:x:${uid}:${gid}:tester,,,:/home/tester:/bin/bash" >> /etc/passwd && \
+    echo "tester:x:${uid}:${gid}::/home/tester:/bin/bash" >> /etc/passwd && \
     echo "tester:x:${uid}:" >> /etc/group && \
     chown ${uid}:${gid} -R /home/tester
 
@@ -33,7 +33,7 @@ RUN export uid=1000 gid=1000 && \
 # RUN useradd admin && echo "admin:admin" | chpasswd && adduser admin sudo
 
 # Setup working directory
-USER root
+USER tester
 ENV HOME /home/tester
 WORKDIR /home/tester
 
