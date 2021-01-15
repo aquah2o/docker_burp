@@ -2,6 +2,7 @@ echo "MKDIR .JAVA"
 mkdir /root/.java
 mkdir /root/.java/.userPrefs
 mkdir /root/.java/.userPrefs/burp
+echo "COPY FROM /root/ down"
 cp /root/prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
 echo "where is ./PREFS"
 sudo find  / -name  prefs.xml -printf "%T+\t%p\n" | sort 
