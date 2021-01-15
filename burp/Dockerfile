@@ -27,10 +27,10 @@ RUN export uid=1000 gid=1000 && \
     chmod 777 /home/tester && \
     echo "tester:x:${uid}:${gid}::/home/tester:/bin/bash" >> /etc/passwd && \
     echo "tester:x:${uid}:" >> /etc/group && \
-    chown ${uid}:${gid} -R /home/tester
+    chown ${uid}:${gid} -R /home/tester && usermod -aG sudo tester
 
 RUN usermod -aG sudo tester 
-# RUN useradd admin && echo "admin:admin" | chpasswd && adduser admin sudo
+RUN useradd admin && echo "admin:admin" | chpasswd && usermod -aG admin sudo
 
 # Setup working directory
 USER tester
