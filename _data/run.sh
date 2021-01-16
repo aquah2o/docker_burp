@@ -2,7 +2,7 @@ echo "MKDIR .JAVA"
 mkdir /root/.java
 mkdir /root/.java/.userPrefs
 mkdir /root/.java/.userPrefs/burp
-echo "COPY FROM /home/admin = /home/jenkins/ down"
+echo "COPY FROM /home/admin = /var/lib/jenkins/ down"
 echo "where is ./PREFS"
 sudo find  / -name  prefs.xml -printf "%T+\t%p\n" | sort 
 cp /home/admin/prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
