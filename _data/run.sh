@@ -16,6 +16,7 @@ if test -z "$ENV_MEM_JVM"; then
 fi
 echo "[+] JVM Mem: ${ENV_MEM_JVM}"
 pwd
+tail -F /dev/null
 if [ "$ENV_BURP_PRO" -eq "1" ]; then
     echo "[+] Running Burp 1"
 #    ./burp-rest-api.sh --headless.mode=false --address=0.0.0.0 --port=8090  --unpause-spider-and-scanner
