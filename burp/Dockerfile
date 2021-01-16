@@ -33,7 +33,7 @@ RUN usermod -aG sudo tester
 RUN useradd admin && echo "admin:admin" | chpasswd && usermod -aG sudo admin
 
 # Setup working directory
-USER admin
+USER root
 ENV HOME /home/tester
 WORKDIR /home/tester
 
