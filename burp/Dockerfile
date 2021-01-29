@@ -1,8 +1,8 @@
-#FROM ubuntu:16.04
+FROM ubuntu:16.04
 #FROM adoptopenjdk/openjdk11:latest
 #FROM adoptopenjdk:11-jre-hotspot
 #FROM debian:stretch
-FROM ubuntu:latest
+##FROM ubuntu:latest
 #RUN apt-get install software-properties-common
 #RUN add-apt-repository ppa:openjdk-r/ppa
 
