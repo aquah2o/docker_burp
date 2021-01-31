@@ -7,6 +7,7 @@ sudo find  / -name  prefs.xml -printf "%T+\t%p\n" | sort
 cp /home/admin/prefs.xml  /root/.java/.userPrefs/burp/prefs.xml
 ls -la /home/admin/prefs.xml
 cd /home/tester/sources/
+ls -l
 cp -r /home/tester/sources/extensions /root/.java/.userPrefs/burp
 chmod 777 burp-rest-api.sh
 chmod 777 burpsuite._pro_v1.6.jar
@@ -17,7 +18,6 @@ if test -z "$ENV_MEM_JVM"; then
     ENV_MEM_JVM=1024m
 fi
 echo "[+] JVM Mem: ${ENV_MEM_JVM}"
-pwd
 # uncomment to halt docker steps and leave running -->tail -F /dev/null
 if [ "$ENV_BURP_PRO" -eq "1" ]; then
     echo "[+] Running Burp 1"
