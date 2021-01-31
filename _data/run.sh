@@ -10,7 +10,7 @@ cd /home/tester/sources/
 ls -l
 cp -r /home/tester/sources/extensions /root/.java/.userPrefs/burp
 chmod 777 burp-rest-api.sh
-chmod 777 burpsuite._pro_v1.6.jar
+chmod 777 burpsuite_pro_v1.6.jar
 chmod 777 BurpLoader.jar
 cp /home/tester/sources/prefs.xml /root/.java/.userPrefs/burp
 ls -l
