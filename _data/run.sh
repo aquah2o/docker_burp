@@ -10,6 +10,7 @@ cd /home/tester/sources/
 ls -l
 cp -r /home/tester/sources/extensions /root/.java/.userPrefs/burp
 chmod 777 burp-rest-api.sh
+chmod 777 burp-rest-api-2.0.1.jar
 cp /home/tester/sources/prefs.xml /root/.java/.userPrefs/burp
 ls -l
 if test -z "$ENV_MEM_JVM"; then
