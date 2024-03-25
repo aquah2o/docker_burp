@@ -2,7 +2,7 @@ version: '2'
 
 services:
     burp:
-     container_name: burp
+     container_name: burp-1
      build: burp
      environment:
       - DISPLAY=:10.0
